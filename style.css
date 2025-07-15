@@ -1002,61 +1002,18 @@ body {
     opacity: 1;
   }
 }
-
 .graduation-message {
-   position: absolute;
-   top: 10vh;
-   left: 50%;
-   transform: translateX(-50%);
-   width: 95%;
-   text-align: center;
-   font-family: 'Courier New', Courier, monospace;
-   color: white;
-   z-index: 10;
-   text-shadow: 0 0 10px #fff, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
-   line-height: 1.2;
-   word-wrap: break-word;
-   overflow-wrap: break-word;
-   padding: 0 15px;
-   box-sizing: border-box;
-}
-
-/* iPhone 13 (390x844px) */
-@media (max-width: 390px) and (max-height: 844px) {
-   .graduation-message {
-      font-size: 100px;
-      letter-spacing: 0.8px;
-      width: 92%;
-      top: 8vh;
-   }
-}
-
-/* Honor Magic 5 Lite (aproximadamente 393x851px) */
-@media (max-width: 393px) and (max-height: 851px) {
-   .graduation-message {
-      font-size: 14px;
-      letter-spacing: 0.8px;
-      width: 93%;
-      top: 8vh;
-   }
-}
-
-/* Fallback para dispositivos similares */
-@media (max-width: 400px) and (max-height: 900px) {
-   .graduation-message {
-      font-size: 14px;
-      letter-spacing: 0.8px;
-      width: 93%;
-      top: 8vh;
-   }
-}
-
-/* Para orientación horizontal */
-@media (max-height: 400px) and (orientation: landscape) {
-   .graduation-message {
-      font-size: 12px;
-      letter-spacing: 0.6px;
-      top: 5vh;
-      width: 90%;
-   }
-}
+            position: absolute;
+            top: 10vh;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            text-align: center;
+            font-size: 4vw;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            z-index: 10;
+            text-shadow: 0 0 10px #fff, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
