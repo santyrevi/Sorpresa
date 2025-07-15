@@ -6,7 +6,7 @@ onload = () => {
 };
 
 // Texto que se mostrará
-const messageText = "Feliz graduación a la más bonita e inteligente diseñadora gráfica \u00A0Te Quiero Mucho";
+const messageText = "Feliz graduación a la más bonita e inteligente diseñadora gráfica \nTe Quiero Mucho";
 
 // Elemento donde se insertará el texto
 const messageElement = document.getElementById("message");
