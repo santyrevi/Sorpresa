@@ -1009,46 +1009,54 @@ body {
    left: 50%;
    transform: translateX(-50%);
    width: 95%;
-   max-width: 1200px;
    text-align: center;
-   font-size: clamp(10px, 3vw, 24px); /* Se adapta entre 10px y 24px */
    font-family: 'Courier New', Courier, monospace;
    color: white;
    z-index: 10;
    text-shadow: 0 0 10px #fff, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
-   letter-spacing: clamp(0.5px, 0.1vw, 1px); /* Letter-spacing adaptable */
    line-height: 1.2;
    word-wrap: break-word;
    overflow-wrap: break-word;
-   padding: 0 10px; /* Espaciado interno */
-   box-sizing: border-box; /* Incluye padding en el width */
+   padding: 0 15px;
+   box-sizing: border-box;
 }
 
-/* Ajustes específicos para diferentes tamaños */
-@media (max-width: 1200px) {
+/* iPhone 13 (390x844px) */
+@media (max-width: 390px) and (max-height: 844px) {
    .graduation-message {
-      font-size: clamp(9px, 2.8vw, 22px);
-   }
-}
-
-@media (max-width: 768px) {
-   .graduation-message {
-      font-size: clamp(8px, 2.5vw, 18px);
-      width: 98%;
-   }
-}
-
-@media (max-width: 480px) {
-   .graduation-message {
-      font-size: clamp(7px, 2.2vw, 16px);
-      letter-spacing: 0.5px;
+      font-size: 14px;
+      letter-spacing: 0.8px;
+      width: 92%;
       top: 8vh;
    }
 }
 
-@media (max-width: 320px) {
+/* Honor Magic 5 Lite (aproximadamente 393x851px) */
+@media (max-width: 393px) and (max-height: 851px) {
    .graduation-message {
-      font-size: clamp(6px, 2vw, 14px);
-      letter-spacing: 0.3px;
+      font-size: 14px;
+      letter-spacing: 0.8px;
+      width: 93%;
+      top: 8vh;
+   }
+}
+
+/* Fallback para dispositivos similares */
+@media (max-width: 400px) and (max-height: 900px) {
+   .graduation-message {
+      font-size: 14px;
+      letter-spacing: 0.8px;
+      width: 93%;
+      top: 8vh;
+   }
+}
+
+/* Para orientación horizontal */
+@media (max-height: 400px) and (orientation: landscape) {
+   .graduation-message {
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      top: 5vh;
+      width: 90%;
    }
 }
