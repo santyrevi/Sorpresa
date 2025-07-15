@@ -1009,22 +1009,15 @@ body {
    left: 50%;
    transform: translateX(-50%);
    width: 90%;
+   max-width: 800px; /* Limita el ancho máximo */
    text-align: center;
-   font-size: 4vw;
+   font-size: 24px; /* Tamaño fijo en lugar de 4vw */
    font-family: 'Courier New', Courier, monospace;
    color: white;
    z-index: 10;
    text-shadow: 0 0 10px #fff, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
    letter-spacing: 1px;
    line-height: 1.2;
- }
-
- .not-loaded * {
-    animation-play-state: paused !important;
- }
-
- @keyframes fade-in-text {
-    to {
-         opacity: 1;
-       }
- }
+   word-wrap: break-word; /* Permite quebrar palabras largas */
+   overflow-wrap: break-word;
+}
