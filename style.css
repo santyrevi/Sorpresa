@@ -1014,6 +1014,6 @@ body {
             color: white;
             z-index: 10;
             text-shadow: 0 0 10px #fff, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             line-height: 1.2;
         }
