@@ -1,6 +1,6 @@
-
-document.getElementById("mostrar").addEventListener("click", function () {
-  document.getElementById("rosas").classList.remove("oculto");
-  document.getElementById("mensaje").classList.remove("oculto");
-  this.style.display = "none"; // Oculta el botón
-});
+onload = () => {
+  const c = setTimeout(() => {
+    document.body.classList.remove("not-loaded");
+    clearTimeout(c);
+  }, 1000);
+};
