@@ -1003,6 +1003,7 @@ body {
   }
 }
 
+/* Estilo general para portrait (vertical) */
 .graduation-message {
   position: absolute;
   top: 30px;
@@ -1015,11 +1016,19 @@ body {
   text-shadow: 0 0 10px #fff, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
   letter-spacing: 1px;
   white-space: pre-wrap;
+  transform: none;
 }
 
-@media (max-width: 480px) {
+/* Estilo para landscape (horizontal) */
+@media (orientation: landscape) {
   .graduation-message {
-    font-size: 3em; /* Más grande para móviles */
+    top: 50%;
+    left: 50%;
+    width: max-content;
+    max-width: 90vh;
+    font-size: 3em;
+    transform: translate(-50%, -50%) rotate(90deg);
+    transform-origin: center center;
+    text-align: center;
   }
 }
-
