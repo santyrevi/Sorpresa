@@ -1008,12 +1008,17 @@ body {
   top: 30px;
   width: 100%;
   text-align: center;
-  font-size: 2em;
   font-family: 'Courier New', Courier, monospace;
   color: white;
   z-index: 10;
   text-shadow: 0 0 10px #fff, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
   letter-spacing: 1px;
   white-space: pre-wrap;
+  padding: 0 10px;
+  font-size: 5vw; /* Adaptable */
 }
-
+@media (max-width: 600px) {
+  .graduation-message {
+    font-size: 6.5vw;
+  }
+}
